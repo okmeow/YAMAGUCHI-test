@@ -1,5 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import {initTableButtons} from './modules/init-table-buttons';
 
 // ---------------------------------
 
@@ -14,8 +15,11 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
 
+
+
   window.addEventListener('load', () => {
     initModals();
+    initTableButtons();
   });
 });
 

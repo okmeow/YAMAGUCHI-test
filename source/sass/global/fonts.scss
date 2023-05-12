@@ -1,21 +1,20 @@
-// @font-face {
-//   font-style: normal;
-//   font-weight: 400;
-//   font-family: "Rouble";
-
-//   font-display: swap;
-//   src:
-//     url("../fonts/rouble.woff2") format("woff2"),
-//     url("../fonts/rouble.woff") format("woff");
-// }
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Ubuntu";
+  font-display: swap;
+  src:
+    url("../fonts/ubuntu-light.woff2") format("woff2"),
+    url("../fonts/ubuntu-light.woff") format("woff");
+}
 
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "";
-
+  font-family: "BebasNeue";
   font-display: swap;
   src:
-    url("../fonts/.woff2") format("woff2"),
-    url("../fonts/.woff") format("woff");
+    url("../fonts/bebasneue-regular.woff2") format("woff2"),
+    url("../fonts/bebasneue-regular.woff") format("woff");
 }
+

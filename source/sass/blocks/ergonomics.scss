@@ -1,0 +1,163 @@
+.ergonomics {
+  background-color: #f3f3f3;
+
+  &__wrapper {
+    padding: 25px 50px 25px 100px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    @include vp-1600 {
+      display: flex;
+      flex-direction: column;
+      padding: 25px;
+    }
+
+    @include vp-1023 {
+      padding: 12px;
+    }
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 62px;
+    line-height: 62px;
+    color: #0b64fe;
+    margin: 0 0 68px 0;
+    grid-column: 2 / -1;
+
+    @include vp-1600 {
+      font-family: "BebasNeue", "Arial", sans-serif;
+      font-size: 38px;
+      line-height: 38px;
+    }
+  }
+
+  &__description {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 37px;
+    color: #181818;
+    grid-column: 2 / -1;
+    margin: 0;
+
+    &:not(:last-child) {
+      margin: 0 0 20px 0;
+
+      @include vp-1600 {
+        margin: 0 0 120px 0;
+      }
+
+      @include vp-1023 {
+        margin: 0 0 60px 0;
+      }
+    }
+  }
+
+  &__table-wrapper {
+    grid-row: 1 / 5;
+    position: relative;
+    margin: 80px 0 0 0;
+
+    @include vp-1600 {
+      margin: 0 auto;
+    }
+  }
+
+  &__button-wrapper {
+    display: flex;
+    position: absolute;
+    bottom: 190px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 30;
+
+    @include vp-1023 {
+      bottom: 90px;
+    }
+
+    @include vp-767 {
+      bottom: 30px;
+    }
+  }
+
+  &__button {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #a6ffff;
+    border: none;
+    font-size: 40px;
+    line-height: 68px;
+    font-weight: 300;
+    cursor: pointer;
+    padding: 0;
+
+    transition: background-color $trans-default;
+
+    @include vp-1600 {
+      width: 160px;
+      height: 160px;
+      font-size: 30px;
+      line-height: 38px;
+    }
+
+    @include vp-1023 {
+      width: 100px;
+      height: 100px;
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    @include vp-767 {
+      width: 60px;
+      height: 60px;
+      font-size: 12px;
+      line-height: 21px;
+    }
+
+    &:hover {
+      background-color: #0ce6e6;
+    }
+
+    &:first-child {
+      margin: 0 5% 0 0;
+    }
+
+    &.disabled {
+      background-color: #d8d8d8;
+      cursor: default;
+    }
+  }
+
+  &__img {
+    @include vp-1023 {
+      width: 500px;
+      height: auto;
+    }
+
+    @include vp-767 {
+      width: 320px;
+    }
+  }
+
+  &__img--high {
+    z-index: 20;
+    margin: 0 auto;
+    position: relative;
+    transition: transform $trans-default;
+  }
+
+  &__img--low {
+    position: relative;
+    z-index: 10;
+    margin: -190px auto 0 auto;
+
+    @include vp-1023 {
+      margin: -140px auto 0 auto;
+    }
+
+    @include vp-767 {
+      margin: -100px auto 0 auto;
+    }
+  }
+}
