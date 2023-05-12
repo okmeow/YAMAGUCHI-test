@@ -2,6 +2,8 @@
   background-color: #f3f3f3;
 
   &__wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
     padding: 25px 50px 25px 100px;
     display: grid;
     grid-template-columns: 2fr 1fr;
