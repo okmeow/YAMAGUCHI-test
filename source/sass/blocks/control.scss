@@ -12,6 +12,11 @@
     overflow: hidden;
 
     @include vp-1600 {
+      padding: 72px 220px 5px 220px;
+      background-image: none;
+    }
+
+    @include vp-1023 {
       padding: 72px 12px 5px 12px;
       background-image: none;
     }
@@ -25,11 +30,15 @@
 
     @include vp-1600 {
       width: 100%;
-      padding: 470px 12px 100px 12px;
+      padding: 470px 220px 100px 220px;
       background-image: url("../img/control-background.png");
       background-repeat: no-repeat;
       background-size: 420px 420px;
       background-position: center 50px;
+    }
+
+    @include vp-1023 {
+      padding: 470px 12px 100px 12px;
     }
   }
 
@@ -196,18 +205,18 @@
   }
 
   to {
-    top: 100px;
+    top: 10px;
   }
 }
 
 
 @keyframes girl-reverse {
   from {
-    top: -10px;
+    top: 10px;
   }
 
   to {
-    top: 30px;
+    top: 60px;
   }
 }
 
