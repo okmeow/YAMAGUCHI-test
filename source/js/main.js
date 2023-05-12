@@ -14,9 +14,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
-
-
-
   window.addEventListener('load', () => {
     initModals();
     initTableButtons();
@@ -35,4 +32,3 @@ window.addEventListener('DOMContentLoaded', () => {
 // };
 // breakpoint.addListener(breakpointChecker);
 // breakpointChecker();
-
